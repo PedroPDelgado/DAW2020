@@ -27,12 +27,13 @@
         </element>
     </workteam>
     <abstract>
-        <paragraph>Este documento foi gerado tendo por base um ficheiro do tipo <bi>Document Type Definition </bi><b>(.dtd) </b> através da ferramenta <s>Oxygen XML Editor.</s>
+        <paragraph>Este documento foi gerado tendo por base um ficheiro do tipo <bi>Document Type Definition </bi><b>(.dtd) </b> através da ferramenta <link url="https://www.oxygenxml.com/">Oxygen XML Editor.</link>
             O documento pode ser encontrado na secção <bi>deliverables.</bi></paragraph>
         <paragraph>O uso de um ficheiro <bi>Document Type Definition </bi> permite-nos gerar documentos <b>(.xml) </b> com a garantia de que estes respeitarão o formato pretendido, evitando erros.
         </paragraph>
     </abstract>
     <deliverables>
-        <deliverable url="">Ficheiro Document Type Defenition usado para gerar este documento.</deliverable>
+        <deliverable url="https://github.com/PedroPDelgado/DAW2020/tree/main/T2">Repositório do projeto</deliverable>
+        <deliverable url="https://github.com/PedroPDelgado/DAW2020/blob/main/T2/prdtd.dtd">Ficheiro Document Type Defenition usado para gerar este documento.</deliverable>
     </deliverables>
 </record>
