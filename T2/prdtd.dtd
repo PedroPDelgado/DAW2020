@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT record (metadata, workteam, abstract, deliverables)>
+
+<!ELEMENT metadata (keyname, title, subtitle, begindate, enddate, teacher)>
+<!ELEMENT keyname (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT subtitle (#PCDATA)>
+<!ELEMENT begindate (month, year)>
+<!ELEMENT enddate (month, year)>
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT teacher EMPTY>
+<!ATTLIST teacher
+	name CDATA #REQUIRED
+	link CDATA #IMPLIED>
+	
+<!ELEMENT workteam (element)+>
+<!ELEMENT element (name, email, webpage?)>
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+<!ELEMENT webpage (#PCDATA) >
+<!ATTLIST webpage
+    url CDATA #REQUIRED>
+<!ATTLIST element
+	id ID #REQUIRED>
+	
+<!ELEMENT abstract (paragraph)+>
+<!ELEMENT paragraph (#PCDATA | b | i | s | bi | bs | is | bis | link)*>
+<!ELEMENT b (#PCDATA)>
+<!ELEMENT i (#PCDATA)>
+<!ELEMENT s (#PCDATA)>
+<!ELEMENT bi (#PCDATA)>
+<!ELEMENT bs (#PCDATA)>
+<!ELEMENT is (#PCDATA)>
+<!ELEMENT bis (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ATTLIST link
+    url CDATA #REQUIRED>
+    
+
+<!ELEMENT deliverables (deliverable)+>
+<!ELEMENT deliverable (#PCDATA) >
+<!ATTLIST deliverable
+    url CDATA #REQUIRED>

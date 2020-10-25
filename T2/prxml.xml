@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE record SYSTEM "prdtd.dtd">
+<record>
+    <metadata>
+        <keyname>DAW_2020_PR</keyname>
+        <title>Descrição do ficheiro .dtd utilizado para gerar este documento</title>
+        <subtitle>Projeto inserido na cadeira de Desenvolvimento de Aplicações Web do Mestrado em Engenharia Informática na Universidade do Minho</subtitle>
+        <begindate>
+            <month>Outubro</month>
+            <year>2020</year>
+        </begindate>
+        <enddate>
+            <month>Outubro</month>
+            <year>2020</year>
+        </enddate>
+        <teacher name="José Carlos Ramalho" link="http://www4.di.uminho.pt/~jcr/"/>
+    </metadata>
+    <workteam>
+        <element id="A85334">
+            <name>Pedro Paulo Delgado</name>
+            <email>a85334@alunos.uminho.pt</email>
+        </element>
+        <element id="A99999">
+            <name>Exemplo de outro colega</name>
+            <email>a99999@alunos.uminho.pt</email>
+            <webpage url="https://www.di.uminho.pt/">DI Uminho</webpage>
+        </element>
+    </workteam>
+    <abstract>
+        <paragraph>Este documento foi gerado tendo por base um ficheiro do tipo <bi>Document Type Definition </bi><b>(.dtd) </b> através da ferramenta <s>Oxygen XML Editor.</s>
+            O documento pode ser encontrado na secção <bi>deliverables.</bi></paragraph>
+        <paragraph>O uso de um ficheiro <bi>Document Type Definition </bi> permite-nos gerar documentos <b>(.xml) </b> com a garantia de que estes respeitarão o formato pretendido, evitando erros.
+        </paragraph>
+    </abstract>
+    <deliverables>
+        <deliverable url="">Ficheiro Document Type Defenition usado para gerar este documento.</deliverable>
+    </deliverables>
+</record>
