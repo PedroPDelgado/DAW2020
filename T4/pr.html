@@ -1,0 +1,41 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Project Record</title>
+   </head>
+   <body>
+      <h1 align="center">Project Record</h1>
+      <hr>
+      <table width="100%" border="0">
+         <tbody>
+            <tr>
+               <td width="50%"><b>Key Name: </b>DAW2020::T4</td>
+               <td width="50%"><b>Begin Date: </b>06/11/2020</td>
+            </tr>
+            <tr>
+               <td width="50%"><b>Title: </b>Servidor nodejs para servir páginas de um website gerado através de um dataset XML</td>
+               <td width="50%"><b>End Date: </b>07/11/2020</td>
+            </tr>
+            <tr>
+               <td width="50%"><b>Supervisor: </b><a href="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <hr>
+      <h3>WorkTeam</h3>
+      <ol>
+         <li><b>Número: </b>a85334; <b>Nome: </b>Pedro Delgado; <b>Email: </b>a85334@alunos.uminho.pt</li>
+      </ol>
+      <hr>
+      <h3>Abstract</h3>
+      <p>O dataset <a href="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/arq.xml">"arq.xml"</a> foi processado através de um ficheiro <a href="">XSLT</a> gerando um website.
+         Este é constituído por um índice que redireciona para as restantes páginas através
+         de links da forma <i>http://localhostxxxx/arqs/{id}</i>fazendo uso do servidor <i>nodejs</i> desenvolvido. 
+         Para se gerar o id de cada ficheiro, utilizou-se a expressão <i>./count(preceding-sibling::*)</i> que conta quantos <i>"siblings"</i> de <i>ARQELEM</i> foram totalmente processados. 
+         Desta forma, obteve-se um <i>id</i> único e sequencial para cada um dos <i>ARQELEMS</i>.</p>
+      <p>O servidor <i>nodejs</i> fica à espera de pedidos na porta 7777 podendo receber 2 tipos de pedidos: <i>https://localhost:7777</i> devolvendo o índice, 
+         <i>https://localhost:7777/arqs/[0-9][0-9]?[0-9]?$\/?</i> com os numeros apanhados na expressão regular anterior a serem antes verificados
+         para estarem contidos no intervalo esperado:
+         (0 - 122).</p>
+   </body>
+</html>

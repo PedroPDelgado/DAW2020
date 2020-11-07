@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../../aula4/prdtd.dtd">
+<pr>
+    <meta>
+        <key>DAW2020::T4</key>
+        <title>Servidor nodejs para servir páginas de um website gerado através de um dataset XML</title>
+        <bdate>06/11/2020</bdate>
+        <edate>07/11/2020</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a85334">
+            <name>Pedro Delgado</name>
+            <email>a85334@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>O dataset <link url="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/arq.xml">"arq.xml"</link> foi processado através de um ficheiro <link url="">XSLT</link> gerando um website.
+            Este é constituído por um índice que redireciona para as restantes páginas através de links da forma <i>http://localhostxxxx/arqs/{id}</i>fazendo uso do servidor <i>nodejs</i> desenvolvido. 
+            Para se gerar o id de cada ficheiro, utilizou-se a expressão <i>./count(preceding-sibling::*)</i> que conta quantos <i>"siblings"</i> de <i>ARQELEM</i> foram totalmente processados. 
+            Desta forma, obteve-se um <i>id</i> único e sequencial para cada um dos <i>ARQELEMS</i>.</p>
+        <p>O servidor <i>nodejs</i> fica à espera de pedidos na porta 7777 podendo receber 2 tipos de pedidos: <i>https://localhost:7777</i> devolvendo o índice, 
+            <i>https://localhost:7777/arqs/[0-9][0-9]?[0-9]?$\/?</i> com os numeros apanhados na expressão regular anterior a serem antes verificados para estarem contidos no intervalo esperado:
+         (0 - 122).</p>
+    </abstract>
+    <deliverables>
+        <link url=""></link>
+    </deliverables>
+</pr>
