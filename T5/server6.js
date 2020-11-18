@@ -71,7 +71,7 @@ http.createServer(function (req, res){
 			}).catch(function(error) {
 				console.log("Erro na obtencao da lista de instrumentos: " + error);
 			});
-		}else if (req.url.match('\/alunos\/A[0-9]+')){
+		}else if (req.url.match('\/alunos\/A(E-)?[0-9]+')){
 			id = req.url.split("/")[req.url.split("/").length - 1]
 			axios.get('http://localhost:3001/alunos/' + id)
 			.then(function(resp) {
