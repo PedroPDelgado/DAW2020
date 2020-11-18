@@ -1,0 +1,56 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Project Record</title>
+   </head>
+   <body>
+      <h1 align="center">Project Record</h1>
+      <hr>
+      <table width="100%" border="0">
+         <tbody>
+            <tr>
+               <td width="50%"><b>Key Name: </b>DAW2020::T5</td>
+               <td width="50%"><b>Begin Date: </b>12/11/2020</td>
+            </tr>
+            <tr>
+               <td width="50%"><b>Title: </b>Servidor nodejs para servir páginas de um website gerado através de um dataset XML</td>
+               <td width="50%"><b>End Date: </b>17/11/2020</td>
+            </tr>
+            <tr>
+               <td width="50%"><b>Supervisor: </b><a href="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <hr>
+      <h3>WorkTeam</h3>
+      <ol>
+         <li><b>Número: </b>a85334; <b>Nome: </b>Pedro Delgado; <b>Email: </b>a85334@alunos.uminho.pt</li>
+      </ol>
+      <hr>
+      <h3>Abstract</h3>
+      <p>Este projeto consistiu na implementação de uma API de dados que permitisse retirar/alterar
+         informação de uma base de dados de uma escola de música através do protocolo HTTP.
+         Para isto, foi implementado um servidor em nodejs que recebe os pedidos HTTP do utilizador
+         e os transforma em pedidos, também HTTP, à base de dados.
+         Uma vez que o servidor obtém os dados pretendidos, gera com eles páginas HTML dinamicamente
+         e envia-as para o utilizador. 
+         Os pedidos suportados pelo servidor são a listagem das páginas de alunos, cursos e
+         instrumentos.
+         Cada página de aluno, contém um link para o respetivo curso e em cada página de um
+         curso, um link para o respetivo instrumento abordado no curso.
+         Cada uma das páginas contém ainda um link que permite ao utilizador voltar à página
+         inicial.</p>
+      <p>Os dados utilizados encontram-se num ficheiro Json pelo que é necessário utilizar
+         um serviço como o json-server para que estes dados possam ser acedidos pelo 
+         servidor nodejs.</p>
+         <h3>Deliverables</h3>
+         <ul>
+            <li>
+               <a href="https://github.com/PedroPDelgado/DAW2020/blob/main/T5/server6.js">Servidor nodejs</a>
+            </li>
+            <li>
+               <a href="https://github.com/PedroPDelgado/DAW2020/blob/main/T5/db.json">Ficheiro JSON com os dados</a>
+            </li>
+         </ul>
+   </body>
+</html>

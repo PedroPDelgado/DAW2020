@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../../aula4/prdtd.dtd">
+<pr>
+    <meta>
+        <key>DAW2020::T5</key>
+        <title>Servidor nodejs para servir páginas de um website gerado através de um dataset XML</title>
+        <bdate>12/11/2020</bdate>
+        <edate>17/11/2020</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a85334">
+            <name>Pedro Delgado</name>
+            <email>a85334@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>Este projeto consistiu na implementação de uma API de dados que permitisse retirar/alterar informação de uma base de dados de uma escola de música através do protocolo HTTP.
+           Para isto, foi implementado um servidor em nodejs que recebe os pedidos HTTP do utilizador e os transforma em pedidos, também HTTP, à base de dados.
+           Uma vez que o servidor obtém os dados pretendidos, gera com eles páginas HTML dinamicamente e envia-as para o utilizador. 
+           Os pedidos suportados pelo servidor são a listagem das páginas de alunos, cursos e instrumentos.
+           Cada página de aluno, contém um link para o respetivo curso e em cada página de um curso, um link para o respetivo instrumento abordado no curso.
+           Cada uma das páginas contém ainda um link que permite ao utilizador voltar à página inicial.</p>
+        <p>Os dados utilizados encontram-se num ficheiro Json pelo que é necessário utilizar um serviço como o json-server para que estes dados possam ser acedidos pelo 
+           servidor nodejs.</p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/PedroPDelgado/DAW2020/blob/main/T5/server6.js">Servidor nodejs</link>
+        <link url="https://github.com/PedroPDelgado/DAW2020/blob/main/T5/db.json">Servidor nodejs</link>
+    </deliverables>
+</pr>
