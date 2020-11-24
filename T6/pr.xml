@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../../aula4/prdtd.dtd">
+<pr>
+    <meta>
+        <key>DAW2020::T6</key>
+        <title>Servidor nodejs para servir páginas de um website cujos dados se encontram num dataset JSON</title>
+        <bdate>20/11/2020</bdate>
+        <edate>21/11/2020</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a85334">
+            <name>Pedro Delgado</name>
+            <email>a85334@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>Este projeto consistiu na criação de um site para gerir tarefas. As tarefas contêm um nome, um estado e uma data de término. O estado pode ser pendente ou concluído. A página inicial do site contém as tarefas agrupadas pelo seu estado e ordenadas pelo seu nome.</p>
+      <p>As operações possíveis de fazer com as tarefas são a sua criação, edição e remoção.</p>
+      <p>Em termos de implementação, o projeto consiste num servidor nodejs e json-server capazes de comunicar através de pedidos Http implementados pelo package axios. Incluí ainda formulários html que servem para obter dados do utilizador. Para suportar as operações possíveis, é criado um conjunto de <i>"entry points"</i> na Api que tratam os pedidos HTML de todos os tipos e geram o HTML necessário.</p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/PedroPDelgado/DAW2020/blob/main/T6/server.js">Servidor nodejs</link>
+        <link url="https://github.com/PedroPDelgado/DAW2020/blob/main/T6/tarefas.json">Ficheiro JSON com os dados das tarefas</link>
+    </deliverables>
+</pr>

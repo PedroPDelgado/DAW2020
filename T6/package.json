@@ -1,0 +1,21 @@
+{
+  "name": "t6",
+  "version": "1.0.0",
+  "description": "Gestor de tarefas",
+  "main": "server2.js",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "JS",
+    "node"
+  ],
+  "author": "PedroPDelgado",
+  "license": "ISC"
+}
