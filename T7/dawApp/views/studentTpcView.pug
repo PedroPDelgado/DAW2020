@@ -1,0 +1,20 @@
+extends layout
+
+
+block content
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3.w3-left Student Homework Page (#{student.numero})
+      table.w3-table-all
+        - var c = 1
+        each t in student.tpc
+          tr
+            th  HW #{c}
+            if t == '1'
+              td= 'done'
+            else
+              td= 'missing'
+          - c++
+      footer.w3-container.w3-teal
+        address Gerado por dawApp :: 2020-Nov
+        a(href='/students') Home Page

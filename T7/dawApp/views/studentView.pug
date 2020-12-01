@@ -1,0 +1,34 @@
+extends layout
+
+
+block content
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3.w3-left Student Page (#{student.numero})
+      table.w3-table-all
+        tr
+          th Number
+          th Name
+          th Git
+          th HW
+          th Edit
+          th Delete
+        tr
+          td= student.numero
+          td= student.nome
+          td
+            a(href=student.git) #{student.git}
+          td
+            a(href='/students/tpc/' + student.numero) #{tpc}
+          td 
+            form(action='/students/edit/' + student.numero)
+              input(type='submit', value='Edit student')
+          td 
+            form(action='/students/delete/' + student.numero)
+              input(type='submit', value='Delete student')
+      footer.w3-container.w3-teal
+        address Gerado por dawApp :: 2020-Nov
+        a(href='/students') Home Page
+
+
+  

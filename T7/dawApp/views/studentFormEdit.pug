@@ -1,0 +1,33 @@
+extends layout
+
+
+block content
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3.w3-left Student Edit
+      body
+        form(action='/students/' + student.numero, method='POST')
+          p
+            p #[b Number:] 
+            input(type='text', name='numero', value=student.numero)
+            p #[b Name:]
+            input(type='text', name='nome', value=student.nome)
+            p #[b Git:]
+            input(type='text', name='git', value=student.git)
+            p #[b Completed HW:]
+            div.checkbox-inline
+              - var c = 1
+              each t in student.tpc
+                if t == '1'
+                  input(type='checkbox', name='Hw' + c, value='', checked='checked')
+                  | HW #{c}!{' | '}
+                else
+                  input(type='checkbox', name='Hw' + c, value='')
+                  | HW #{c}!{' | '}
+                - c++
+            br
+            br
+            input(type='submit', value='Submit')
+      footer.w3-container.w3-teal
+        address Gerado por dawApp :: 2020-Nov
+        a(href='/students') Home Page
