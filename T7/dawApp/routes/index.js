@@ -65,7 +65,9 @@ router.get('/students/edit/:id', function(req, res) {
 
 router.post('/students', function(req, res) {
 	// Save student to db
-	Student.insert(req.body)
+  console.log(req.body)
+  std = studentUtil.parseTpc(req.body)
+	Student.insert(std)
 		.then(data => res.render('studentRegistConfirm', { student: data, isNew: true}))
 		.catch(err => res.render('error', {error: err}))
 });

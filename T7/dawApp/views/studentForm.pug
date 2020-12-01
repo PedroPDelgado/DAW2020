@@ -8,12 +8,18 @@ block content
       body
         form(action='/students', method='POST')
           p
-            p Número: 
+            p #[b Number:]
             input(type='text', name='numero', value='')
-            p Nome: 
+            p #[b Name:]
             input(type='text', name='nome', value='')
-            p Git: 
+            p #[b Git:] 
             input(type='text', name='git', value='')
+            p #[b Completed HW:]
+            - var c = 1
+              while c < 9
+                input(type='checkbox', name='Hw' + c, value='')
+                | HW #{c}!{' | '}
+                - c++
             br
             br
             input(type='submit', value='Submit')

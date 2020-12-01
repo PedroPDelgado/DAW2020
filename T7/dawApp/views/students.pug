@@ -18,6 +18,10 @@ block content
                 td= s.nome
                 td
                   a(href=s.git) #{s.git}
+            tr
+              td
+                form(action='/students/register')
+                  input(type='submit', value='+')
       else
         .w3-container
           p There are no students...

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <key>DAW2020::T7</key>
+        <title>Servidor nodejs para servir páginas de um website cujos dados se encontram numa base de dados MongoDB</title>
+        <bdate>30/11/2020</bdate>
+        <edate>01/12/2020</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a85334">
+            <name>Pedro Delgado</name>
+            <email>a85334@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>Este projeto consistiu na criação de um site para gerir alunos. Os alunos contêm um identificador, o seu número, nome, o link para o repositório dos seus trabalhos de casa e os trabalhos de casa completados. </p>
+      <p>As operações possíveis de fazer com os tarefas são a sua criação, edição e remoção, incluindo os trabalhos de casa realizados.</p>
+      <p>Em termos de implementação, o projeto consiste num servidor nodejs e uma base de dados MongoDB capazes de comunicar através de o módulo mongoose. Incluí ainda páginas e formulários html gerados através do template pug que servem para mostrar e obter dados do utilizador. Para suportar as operações possíveis, é criado um conjunto de <i>"entry points"</i> na Api que tratam os pedidos HTML de todos os tipos e geram o HTML necessário.</p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/PedroPDelgado/DAW2020/tree/main/T7/dawApp">Aplicação com todas as componentes do projeto</link>
+        <link url="https://github.com/PedroPDelgado/DAW2020/blob/main/T7/relatorio/pr.xml">Project record em formato xml usado para criar esta página</link>
+    </deliverables>
+</pr>
