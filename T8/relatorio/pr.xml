@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <key>DAW2020::T8</key>
+        <title>Servidor nodejs para efetuar o upload, visualização e download de ficheiros</title>
+        <bdate>04/12/2020</bdate>
+        <edate>05/12/2020</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a85334">
+            <name>Pedro Delgado</name>
+            <email>a85334@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>Este projeto consistiu na criação de um servidor nodejs que permitisse o upload, visualização e download de ficheiros.</p>
+        <p>O upload de ficheiros permite ao utilizador efetuar o upload de um ou mais ficheiros <b>de diferentes diretorias</b></p>
+        <p>A pré-visualização de ficheiros é feita usando o módulo modal e é feita ao nível da página inicial.</p>
+        <p>O download é feito carregando no ficheiro através da janela do gerada pelo modal</p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/PedroPDelgado/DAW2020/tree/main/T8/app">Aplicação com todas as componentes do projeto</link>
+        <link url="https://github.com/PedroPDelgado/DAW2020/blob/main/T8/relatorio/pr.xml">Project record em formato xml usado para criar esta página</link>
+    </deliverables>
+</pr>
